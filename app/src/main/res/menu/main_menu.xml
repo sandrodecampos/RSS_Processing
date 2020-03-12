@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".MainActivity" >
+    <item
+        android:id="@+id/menu_refresh"
+        android:icon="@drawable/ic_refresh"
+        android:title="Refresh"
+        android:orderInCategory="100"
+        app:showAsAction="ifRoom" />
+
+    <item
+        android:id="@+id/style"
+        android:title="RSS News"
+        app:showAsAction="never">
+        <menu>
+            <item
+                android:id="@+id/soccer"
+                android:title="Soccer"
+                app:showAsAction="never" />
+            <item
+                android:id="@+id/world"
+                android:title="World News"
+                app:showAsAction="never" />
+            <item
+                android:id="@+id/top_headlines"
+                android:title="Sport Top Headlines"
+                app:showAsAction="never" />
+        </menu>
+    </item>
+
+    <item
+        android:id="@+id/settings"
+        android:title="Settings"
+        app:showAsAction="never"/>
+</menu>
